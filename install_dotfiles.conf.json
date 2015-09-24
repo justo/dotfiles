@@ -1,0 +1,15 @@
+[
+    {
+        "link": {
+            "~/.bash_profile": "src/bash_profile",
+            "~/.vimrc": "src/vimrc",
+            "~/.zshenv": "src/zshenv",
+            "~/.zshrc": "src/zshrc"
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing submodules"]
+        ]
+    }
+]

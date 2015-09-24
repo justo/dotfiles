@@ -1,0 +1,43 @@
+# MacPorts Installer addition on 2010-12-11_at_13:05:34: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# Set my own PS1 variable
+export PS1='[\A][\u][\W]\$ '
+# export PS1='\[\e[1m\][\A][\u][\W]$(__git_ps1 "(%s)")\$ \[\e[0m\]'
+
+
+export PATH=${PATH}:$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools
+
+alias lsx='ls -aplhG'
+alias ll='ls -l'
+alias up='cd ..'
+
+alias gits='git status'
+alias gitd='git diff'
+alias gitb='git branch'
+alias gitl='git log --stat --relative-date --since=12.hours --graph'
+alias gitll='git log --stat --relative-date -p'
+alias gitl2='git log --graph --abbrev-commit --decorate --date=relative --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(bold black)- %an%C(reset)%C(bold yellow)%d%C(reset)" --all'
+alias gitp='git push'
+alias gitf='git fetch'
+alias gitc='git checkout'
+alias hosts='open -a "Sublime Text 3" /etc/hosts'
+
+opensublime(){
+	open -a "Sublime Text 3" $1
+}
+alias sublime=opensublime
+
+##
+# Your previous $HOME/.profile file was backed up as $HOME/.profile.macports-saved_2013-04-26_at_00:08:06
+##
+
+# MacPorts Installer addition on 2013-04-26_at_00:08:06: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
