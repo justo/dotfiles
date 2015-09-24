@@ -1,22 +1,31 @@
 # dotfiles
-My .files (OS X) with help from mathiasbynens and many other places.
+My OS X dotfiles with help from mathiasbynens and many others.
 
-###_THIS IS A WORK IN PROGRESS_
+###Requirements
+1. Install [Homebrew](http://brew.sh/)
+2. Run brew.sh
+2. Install [NVM](https://github.com/creationix/nvm) (Manual install)
+4. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-1. Install oh-my-zsh
-2. Install NVM
-3. Install RVM
-4. Install Homebrew
-final. run `./install_dotfiles` from here to symlink all dotfiles. Watch for files that already exist, as they won't be overridden.
-finalb. run `./install_osx_settings` and then reboot. _Ignore for now_
+###Dotfile installation
+`./install_dotfiles` to symlink all dotfiles to $HOME. Files **won't** be overridden, so watch out. Safe to run repeatedly if needed.
 
-Manual Installs:
+#####Optional
+`./install_osx_settings` and then reboot. _Ignore for now_
+
+Install [RVM](https://rvm.io/)
+
+#####Tips
+Check your git --version
+
+#####Manual Installs:
 * ~/.gitconfig (contains private token)
 
 
-TODO:
+#####TODO:
 * set src files to open with bash syntax highlighting
 * keep a list of npm -g somewhere
+	* maybe even a list of /repositories
 * integrate brew.sh
 * quicklook extensions
 * automate manual installs?
@@ -25,6 +34,8 @@ TODO:
 * alfred configs?
 * Terminal app config, with fonts
 * set default login shell?
+* make sure permissions are in order
+
 
 
 Helpful links:
