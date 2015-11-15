@@ -18,18 +18,21 @@ Check your git --version
 
 #####Manual Installs:
 * Global npm packages listed in `src/npm-global-packages.txt`
+* Sublime Text config: Contents of `src/sublime` go in `~/Library/Application Support/Sublime Text 3/Packages/User`. Syncing this with Dropbox does not work well. Install ST > Install package control > Move `Package Control.sublime-settings` over, restart ST, wait for packages to install > Quit ST, move rest of preference files > Profit.
 * ~/.gitconfig (contains private token)
 * OS X Terminal theme at `src/Novel-custom.terminal`
+* `dropbox/dropbox-private` contents
 * Mac apps
 	* [Chrome](https://www.google.com/chrome/), [Canary](https://www.google.com/chrome/browser/canary.html)
+	* [Sublime Text](http://www.sublimetext.com/3), [Package control](https://packagecontrol.io/installation)
 	* [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Dev edition](https://www.mozilla.org/en-US/firefox/developer/)
 	* [Dropbox](https://www.dropbox.com/downloading)
 	* [Flux](https://justgetflux.com/news/pages/macquickstart/)
 	* [Alfred](https://www.alfredapp.com/) (Dropbox sync)
 	* [Notational Velocity](http://notational.net/) _Export settings somehow_
-	* [Sublime Text](http://www.sublimetext.com/3), [Package control](https://packagecontrol.io/installation)
 	* [Atom](https://atom.io/), `sync-settings` package
 	* [ImageAlpha](https://pngmini.com/)
+	* [ImageOptim](https://imageoptim.com/)
 	* [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver)
 	* xScope v3.x
 * Fonts
@@ -44,7 +47,7 @@ Check your git --version
 * ~~integrate brew.sh~~
 * quicklook extensions
 * automate some manual installs
-* sublime text and atom configs
+* ~~sublime text~~ and atom configs
 * ~~add fonts for setup to manual part (eg. source code pro)~~
 * finish osx script (set hot-corners, )
 * ~~alfred configs~~
