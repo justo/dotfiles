@@ -57,7 +57,7 @@ plugins=(git grunt npm osx bower brew git-extras sublime sudo wd z)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/git/bin:$PATH
 
 # Android dev
 export PATH=$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools:$PATH
@@ -74,9 +74,9 @@ export PATH=./node_modules/.bin:$PATH
 export PATH=/opt/X11/bin:$PATH
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# NVM - THIS NOW LIVES IN ZPROFILE
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # RVM - whines if it isn't the first entry in $PATH
 # export PATH=$HOME/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/.rvm/gems/ruby-2.0.0-p247@global/bin:$HOME/.rvm/rubies/ruby-2.0.0-p247/bin:$HOME/.rvm/bin:$PATH
@@ -123,11 +123,6 @@ alias gitp='git push'
 alias gitf='git fetch'
 alias gitc='git checkout'
 alias hosts='open -a "Sublime Text 3" /etc/hosts'
+alias npmls0='npm ls --depth=0'
 
 # figlet -f cyberlarge $user
-# Welcome message
-# echo '     __ _____ _____ _____ '
-# echo '  __|  |     | __  |  _  |'
-# echo ' |  |  | | | | __ -|   __|'
-# echo ' |_____|_|_|_|_____|__|   '
-# echo ''

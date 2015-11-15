@@ -4,6 +4,7 @@
             "~/.bash_profile": "src/bash_profile",
             "~/.gitignore_global": "src/gitignore_global",
             "~/.vimrc": "src/vimrc",
+            "~/.zprofile": "src/zprofile",
             "~/.zshenv": "src/zshenv",
             "~/.zshrc": "src/zshrc"
         }

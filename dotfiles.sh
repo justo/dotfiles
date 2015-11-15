@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG="install_dotfiles.conf.json"
+CONFIG="dotfiles.conf.json"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"

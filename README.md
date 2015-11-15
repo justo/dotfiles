@@ -9,7 +9,7 @@ My OS X dotfiles with help from [mathiasbynens](https://github.com/mathiasbynens
 5. Run `./dotfiles.sh` to symlink all dotfiles to $HOME. Files **won't** be overridden, so watch out. Safe to run repeatedly if needed.
 
 #####Optional
-`./osx_settings.sh` and then reboot. _Ignore for now_
+`./osx_settings.sh` and then reboot.
 
 Install [RVM](https://rvm.io/)
 
@@ -17,24 +17,43 @@ Install [RVM](https://rvm.io/)
 Check your git --version
 
 #####Manual Installs:
+* Global npm packages listed in `src/npm-global-packages.txt`
 * ~/.gitconfig (contains private token)
+* OS X Terminal theme at `src/Novel-custom.terminal`
+* Mac apps
+	* [Chrome](https://www.google.com/chrome/), [Canary](https://www.google.com/chrome/browser/canary.html)
+	* [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Dev edition](https://www.mozilla.org/en-US/firefox/developer/)
+	* [Dropbox](https://www.dropbox.com/downloading)
+	* [Flux](https://justgetflux.com/news/pages/macquickstart/)
+	* [Alfred](https://www.alfredapp.com/) (Dropbox sync)
+	* [Notational Velocity](http://notational.net/) _Export settings somehow_
+	* [Sublime Text](http://www.sublimetext.com/3), [Package control](https://packagecontrol.io/installation)
+	* [Atom](https://atom.io/), `sync-settings` package
+	* [ImageAlpha](https://pngmini.com/)
+	* [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver)
+	* xScope v3.x
+* Fonts
+	* [Source Code Pro latest](https://github.com/adobe-fonts/source-code-pro/releases/latest)
+	* [Bitstream Vera Mono](http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/)
 
 
 #####TODO:
 * set src files to open with bash syntax highlighting
-* keep a list of npm -g somewhere
-	* maybe even a list of /repositories
+* ~~keep a list of npm -g somewhere~~ _Can make this better though_
+	* ~~maybe even a list of /repositories~~
 * ~~integrate brew.sh~~
 * quicklook extensions
-* automate manual installs?
+* automate some manual installs
 * sublime text and atom configs
+* ~~add fonts for setup to manual part (eg. source code pro)~~
 * finish osx script (set hot-corners, )
-* alfred configs?
-* Terminal app config, with fonts
+* ~~alfred configs~~
+* ~~Terminal app config, with fonts~~
 * set default login shell?
 * make sure permissions are in order
 
-
+#####MAINTENENCE
+* npm ls -g --depth=0 > src/npm-global-packages.txt
 
 Helpful links:
 
