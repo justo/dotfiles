@@ -49,7 +49,7 @@ Check your git --version
 * automate some manual installs
 * ~~sublime text~~ and atom configs
 * ~~add fonts for setup to manual part (eg. source code pro)~~
-* finish osx script (set hot-corners, )
+* finish osx script (~~set hot-corners~~, )
 * ~~alfred configs~~
 * ~~Terminal app config, with fonts~~
 * set default login shell?
