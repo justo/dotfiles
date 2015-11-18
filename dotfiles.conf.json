@@ -12,7 +12,8 @@
     {
         "shell": [
             ["git submodule update --init --recursive", "Installing submodules"],
-            ["git config --global core.excludesfile ~/.gitignore_global", "Setting global gitignore"]
+            ["git config --global core.excludesfile ~/.gitignore_global", "Setting global gitignore"],
+            ["mkdir ~/.vimbackups", "Making extra directories"]
         ]
     }
 ]
