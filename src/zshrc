@@ -54,6 +54,8 @@ ZSH_THEME="wezm"
 plugins=(git grunt npm osx bower brew git-extras sublime sudo wd z)
 
 # User configuration
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -110,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias lsx='ls -aplhfG'
+alias lsr='ls -aplhGrc'
 alias ll='ls -l'
 alias up='cd ..'
 
