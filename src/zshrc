@@ -117,6 +117,7 @@ alias ll='ls -l'
 alias up='cd ..'
 
 alias gits='git status'
+alias gs='git status'
 alias gitd='git diff'
 alias gitb='git branch'
 alias gitl='git log --stat --relative-date --since=12.hours --graph'
@@ -125,6 +126,7 @@ alias gitl2='git log --graph --abbrev-commit --decorate --date=relative --format
 alias gitp='git push'
 alias gitf='git fetch'
 alias gitc='git checkout'
+alias gitbclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias hosts='open -a "Sublime Text 3" /etc/hosts'
 alias npmls0='npm ls --depth=0'
 
