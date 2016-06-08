@@ -155,7 +155,8 @@ alias gitp='git push'
 alias gitf='git fetch'
 alias gitc='git checkout'
 alias gitbclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
-alias hosts='open -a "Sublime Text 3" /etc/hosts'
+# alias hosts='open -a "Sublime Text 3" /etc/hosts'
+alias hosts='open -a Atom /etc/hosts'
 alias npmls0='npm ls --depth=0'
 
 # figlet -f cyberlarge $user
