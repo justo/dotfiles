@@ -1,0 +1,11 @@
+###########################
+# merge with ~/.gitconfig #
+###########################
+
+[core]
+	excludesfile = /Users/justin/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
