@@ -15,6 +15,7 @@ Install [RVM](https://rvm.io/)
 
 #####Tips
 Check your git --version
+`brew install git --without-completions` allows git-extras completion to work.
 
 #####Manual Installs:
 * Global npm packages listed in `src/npm-global-packages.txt`
