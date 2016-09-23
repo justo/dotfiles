@@ -172,3 +172,5 @@ alias hosts='open -a Atom /etc/hosts'
 alias npmls0='npm ls --depth=0'
 
 # figlet -f cyberlarge $user
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
