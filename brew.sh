@@ -22,7 +22,6 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 # WEB DEV UTILS
 brew install tidy-html5
 
-
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
@@ -88,7 +87,8 @@ brew install woff2
 brew install ack
 brew install dark-mode
 #brew install exiv2
-brew install git
+brew install git --without-completions
+brew install git-extras
 brew install git-lfs
 brew install imagemagick --with-webp
 brew install lua

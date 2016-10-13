@@ -1,5 +1,4 @@
-echo -ne "Today is "; date
-echo -ne "Up time: "; uptime
+echo -ne "Uptime: "; uptime
 # echo '==========================================================='
 echo ''
 
@@ -20,7 +19,7 @@ ZSH_THEME="wezm"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=7
+export UPDATE_ZSH_DAYS=3
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -51,11 +50,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras grunt npm osx bower brew sublime sudo z)
-
-# User configuration
-zstyle ':completion:*' squeeze-slashes true
-zstyle ':completion:*:cd:*' ignore-parents parent pwd
+plugins=(git git-extras npm osx brew sudo z)
 
 # binds hex 0x18 0x7f with deleting everything to the left of the cursor
 # use it in iterm to bind cmd+backspace to send that hex code
@@ -130,7 +125,22 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion # NVM auto completion. Must load after sourcing oh-my-zsh.
 
-autoload -U zmv
+# User configuration
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle :compinstall filename '/Users/justin/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# figlet -f cyberlarge $user
 
 # emulate zsh -c '. ~/.nvm/nvm.sh'
 
@@ -169,10 +179,5 @@ alias gitp='git push'
 alias gitf='git fetch'
 alias gitc='git checkout'
 alias gitbclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
-# alias hosts='open -a "Sublime Text 3" /etc/hosts'
 alias hosts='open -a Atom /etc/hosts'
 alias npmls0='npm ls --depth=0'
-
-# figlet -f cyberlarge $user
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
