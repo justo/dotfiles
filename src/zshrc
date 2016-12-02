@@ -99,8 +99,9 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/l
 # Android dev
 export PATH=$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools:$PATH
 
-# NPM
+# NPM and yarn
 export PATH=./node_modules/.bin:$PATH
+export PATH=$PATH:`yarn global bin`
 
 # HOMEBREW
 # This line replaces basic system commands with linux versions, which right now
