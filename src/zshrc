@@ -139,6 +139,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Prevent tabs from sharing history (http://apple.stackexchange.com/questions/75571/the-history-is-shared-between-my-iterm2-terminal-tabs-how-can-i-switch-that-off)
+unsetopt inc_append_history
+unsetopt share_history
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # figlet -f cyberlarge $user
