@@ -113,8 +113,8 @@ export PATH=/opt/X11/bin:$PATH
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 # NVM - THIS NOW LIVES IN ZPROFILE
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # RVM - whines if it isn't the first entry in $PATH
 # export PATH=$HOME/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/.rvm/gems/ruby-2.0.0-p247@global/bin:$HOME/.rvm/rubies/ruby-2.0.0-p247/bin:$HOME/.rvm/bin:$PATH
