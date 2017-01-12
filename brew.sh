@@ -21,6 +21,7 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # WEB DEV UTILS
 brew install tidy-html5
+brew install diff-so-fancy
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
