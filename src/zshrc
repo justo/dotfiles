@@ -1,6 +1,4 @@
-echo -ne "Uptime: "; uptime
-# echo '==========================================================='
-echo ''
+echo -n "Uptime: "; uptime
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -116,6 +114,8 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+echo -n 'Using node '; node --version
+
 # RVM - whines if it isn't the first entry in $PATH
 # export PATH=$HOME/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/.rvm/gems/ruby-2.0.0-p247@global/bin:$HOME/.rvm/rubies/ruby-2.0.0-p247/bin:$HOME/.rvm/bin:$PATH
 
@@ -186,3 +186,5 @@ alias gitc='git checkout'
 alias gitbclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias hosts='open -a Atom /etc/hosts'
 alias npmls0='npm ls --depth=0'
+
+echo ''
