@@ -48,7 +48,7 @@ export UPDATE_ZSH_DAYS=3
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras npm osx brew sudo z)
+plugins=(git git-extras npm sudo z)
 
 # binds hex 0x18 0x7f with deleting everything to the left of the cursor
 # use it in iterm to bind cmd+backspace to send that hex code
@@ -94,17 +94,9 @@ chpwd() {
 
 export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/git/bin:$PATH
 
-# Android dev
-export PATH=$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools:$PATH
-
 # NPM and yarn
 export PATH=./node_modules/.bin:$PATH
-export PATH=$PATH:`yarn global bin`
-
-# HOMEBREW
-# This line replaces basic system commands with linux versions, which right now
-# breaks some of my aliases like ls. Can still run them all with 'g' prefixed (gls etc.)
-# export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+# export PATH=$PATH:`yarn global bin`
 
 # X11
 export PATH=/opt/X11/bin:$PATH
@@ -114,13 +106,13 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-echo -n 'Using node '; node --version
+# echo -n 'Using node '; node --version
 
 # RVM - whines if it isn't the first entry in $PATH
 # export PATH=$HOME/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/.rvm/gems/ruby-2.0.0-p247@global/bin:$HOME/.rvm/rubies/ruby-2.0.0-p247/bin:$HOME/.rvm/bin:$PATH
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 source $ZSH/oh-my-zsh.sh
 
