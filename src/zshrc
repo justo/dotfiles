@@ -9,6 +9,14 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 # bureau, smt, terminalparty, wezm, ys
 ZSH_THEME="jwezm"
+# ZSH_THEME="spaceship"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,7 +56,19 @@ export UPDATE_ZSH_DAYS=3
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras npm osx brew sudo z)
+plugins=(
+  autojump
+  git
+  git-extras
+  npm
+  osx
+  brew
+  sudo
+  sublime
+  tmux
+  yarn
+  z
+)
 
 # binds hex 0x18 0x7f with deleting everything to the left of the cursor
 # use it in iterm to bind cmd+backspace to send that hex code
@@ -146,6 +166,8 @@ unsetopt inc_append_history
 unsetopt share_history
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+autoload zmv
 
 # figlet -f cyberlarge $user
 
